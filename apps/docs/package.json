@@ -8,7 +8,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@m0t0r/foo-design-system": "*",
+    "@m0t0r/foo-design-system": "1.0.0-next.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

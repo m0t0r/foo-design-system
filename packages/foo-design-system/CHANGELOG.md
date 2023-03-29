@@ -1,5 +1,11 @@
 # @m0t0r/foo-design-system
 
+## 1.0.0-next.0
+
+### Major Changes
+
+- 9c8f992: Release 1.0.0-next.0
+
 ## 0.0.2
 
 ### Patch Changes

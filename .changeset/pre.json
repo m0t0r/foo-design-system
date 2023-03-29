@@ -7,5 +7,7 @@
     "@m0t0r/tsconfig": "0.0.0",
     "@m0t0r/utils": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "brown-wombats-pretend"
+  ]
 }
