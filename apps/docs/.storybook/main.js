@@ -17,7 +17,7 @@ module.exports = {
             find: "@m0t0r/foo-design-system",
             replacement: path.resolve(
               __dirname,
-              "../../../packages/acme-core/"
+              "../../../packages/m0t0r-core/"
             ),
           },
         ],
