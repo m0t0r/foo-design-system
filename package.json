@@ -9,7 +9,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "release": "turbo run build --filter=docs^... && changeset publish",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
@@ -22,5 +23,8 @@
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "npm@8.19.2"
+  "packageManager": "npm@8.19.2",
+  "dependencies": {
+    "patch-package": "^6.5.1"
+  }
 }
