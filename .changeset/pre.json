@@ -1,0 +1,11 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "eslint-config-m0t0r": "0.0.0",
+    "@m0t0r/foo-design-system": "0.0.2",
+    "@m0t0r/tsconfig": "0.0.0",
+    "@m0t0r/utils": "0.0.0"
+  },
+  "changesets": []
+}
