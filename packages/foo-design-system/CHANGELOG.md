@@ -1,5 +1,11 @@
 # @m0t0r/foo-design-system
 
+## 0.0.3
+
+### Patch Changes
+
+- 2154f21: Release 0.0.3
+
 ## 0.0.2
 
 ### Patch Changes
