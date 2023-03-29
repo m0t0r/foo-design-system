@@ -9,7 +9,6 @@
   "updateInternalDependencies": "patch",
   "ignore": [
     "@m0t0r/docs",
-    "@m0t0r/utils",
-    "@m0t0r/tsconfig"
+    "@m0t0r/utils"
   ]
 }
