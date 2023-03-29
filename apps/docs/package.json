@@ -1,6 +1,4 @@
 {
-  "name": "@acme/docs",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006",
@@ -9,12 +7,12 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@acme/core": "workspace:0.0.0",
+    "@m0t0r/foo-design-system": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@acme/tsconfig": "workspace:0.0.0",
+    "@acme/tsconfig": "*",
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-docs": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
@@ -22,7 +20,7 @@
     "@storybook/builder-vite": "^0.1.41",
     "@storybook/react": "^6.5.14",
     "@vitejs/plugin-react": "^1.3.2",
-    "eslint-config-acme": "workspace:0.0.0",
+    "eslint-config-acme": "*",
     "serve": "^13.0.4",
     "typescript": "^4.9.3",
     "vite": "^2.9.15"

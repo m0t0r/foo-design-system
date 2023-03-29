@@ -45,7 +45,7 @@ Using Turborepo simplifes managing your design system monorepo, as you can have 
 This Turborepo includes the following packages and applications:
 
 - `apps/docs`: Component documentation site with Storybook
-- `packages/@acme/core`: Core React components
+- `packages/@m0t0r/foo-design-system`: Core React components
 - `packages/@acme/utils`: Shared React utilities
 - `packages/@acme/tsconfig`: Shared `tsconfig.json`s used throughout the Turborepo
 - `packages/eslint-config-acme`: ESLint preset
@@ -70,7 +70,7 @@ tsup src/index.tsx --format esm,cjs --dts --external react
 
 ```json:acme-core/package.json
 {
-  "name": "@acme/core",
+  "name": "@m0t0r/foo-design-system",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

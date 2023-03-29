@@ -1,4 +1,6 @@
 {
+  "name": "@m0t0r/foo-design-system",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "turbo run build",
