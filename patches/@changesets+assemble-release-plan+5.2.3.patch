@@ -1,0 +1,39 @@
+diff --git a/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.dev.js b/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.dev.js
+index 3a37c62..4aaad46 100644
+--- a/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.dev.js
++++ b/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.dev.js
+@@ -430,7 +430,7 @@ function applyLinks(releases, packagesByName, linked) {
+ 
+ function getPreVersion(version) {
+   let parsed = semver.parse(version);
+-  let preVersion = parsed.prerelease[1] === undefined ? -1 : parsed.prerelease[1];
++  let preVersion = parsed?.prerelease[1] === undefined ? -1 : parsed.prerelease[1];
+ 
+   if (typeof preVersion !== "number") {
+     throw new errors.InternalError("preVersion is not a number");
+diff --git a/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.prod.js b/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.prod.js
+index 87b4c10..bbd6f6a 100644
+--- a/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.prod.js
++++ b/node_modules/@changesets/assemble-release-plan/dist/assemble-release-plan.cjs.prod.js
+@@ -214,7 +214,7 @@ function applyLinks(releases, packagesByName, linked) {
+ }
+ 
+ function getPreVersion(version) {
+-  let parsed = semver.parse(version), preVersion = void 0 === parsed.prerelease[1] ? -1 : parsed.prerelease[1];
++  let parsed = semver.parse(version), preVersion = void 0 === parsed?.prerelease[1] ? -1 : parsed.prerelease[1];
+   if ("number" != typeof preVersion) throw new errors.InternalError("preVersion is not a number");
+   return preVersion++, preVersion;
+ }
+diff --git a/node_modules/@changesets/assemble-release-plan/src/index.ts b/node_modules/@changesets/assemble-release-plan/src/index.ts
+index 3ffb6fa..feaa000 100644
+--- a/node_modules/@changesets/assemble-release-plan/src/index.ts
++++ b/node_modules/@changesets/assemble-release-plan/src/index.ts
+@@ -24,7 +24,7 @@ type SnapshotReleaseParameters = {
+ function getPreVersion(version: string) {
+   let parsed = semver.parse(version)!;
+   let preVersion =
+-    parsed.prerelease[1] === undefined ? -1 : parsed.prerelease[1];
++  parsed?.prerelease[1] === undefined ? -1 : parsed.prerelease[1];
+   if (typeof preVersion !== "number") {
+     throw new InternalError("preVersion is not a number");
+   }
